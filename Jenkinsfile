@@ -22,7 +22,7 @@ pipeline {
 
         stage('Code Analysis') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.host.url=http://sonarqube:9000'
+                sh 'mvn sonar:sonar -Dsonar.host.url=http://sonarqube:9000' -Dsonar.token=sqa_f6606121ead2fb6a94935726323d3688d4234b09
             }
         }
 
